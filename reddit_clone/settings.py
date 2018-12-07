@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'django_extensions'
+    'django_extensions',
+    'main'
 ]
 
 
@@ -80,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'reddit_database',
-        'USER': 'sample',
-        'PASSWORD': 'sample',
+        'USER': 'reddit_user',
+        'PASSWORD': 'reddit',
         'HOST': 'localhost'
     }
 }
