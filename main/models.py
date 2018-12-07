@@ -17,6 +17,7 @@ class Comments(models.Model):
     created_at= models.DateTimeField
     content= models.CharField(max_length=400, null=True, blank=True)
     vote_total=models.IntegerField
+    post =  models.ForeignKey(Post, on_delete=models.CASCADE, related_name='posts')
 
 
     def __str__(self):
